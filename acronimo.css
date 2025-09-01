@@ -1,0 +1,56 @@
+/*Resetear estilos del navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh; /* asegura que cubra toda la pantalla */
+}
+
+/*Declaracion de variables personalizadas*/
+:root{
+  --color-background: #f1faee;
+  --color-initial-letter: #e63946;
+  --color-title: #1d3557;
+  --color-text: #457b9d;
+  --color-buttons: #a8dadc;
+  --color-backgorund-card: #f1faee;
+  --font-initial-letter: "Libertinus Keyboard", system-ui;
+  --font-title: "Libre Baskerville", serif;
+  --font-text: "Libertinus Serif Display", system-ui;
+}
+
+
+body {
+  background-image: url("./img/texturaFondo.jpg");
+}
+
+.container { 
+  max-width: 900px;
+  width: 100%;
+}
+
+.page-header{
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: var(--color-background);
+  padding: 10px;
+}
+h1 { 
+  font-family: var(--font-title);
+  font-size: 35px;
+  color: var(--color-title);
+}
+p {
+  font-family: var(--font-text);
+  font-size: 25px;
+  color: var(--color-text);
+}
+
+img {
+  width: 10%;
+  height: auto; /*Mantiene la proporción al cambiar el ancho*/
+}
