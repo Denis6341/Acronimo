@@ -12,12 +12,12 @@ html, body {
 
 /*Declaracion de variables personalizadas*/
 :root{
-  --color-background: #f1faee;
-  --color-initial-letter: #e63946;
+  --color-background: #91f76f;
+  --color-initial-letter: #052e03e7;
   --color-title: #1d3557;
   --color-text: #457b9d;
   --color-buttons: #a8dadc;
-  --color-backgorund-card: #f1faee;
+  --color-backgorund-card: #91f76f;
   --font-initial-letter: "Libertinus Keyboard", system-ui;
   --font-title: "Libre Baskerville", serif;
   --font-text: "Libertinus Serif Display", system-ui;
@@ -25,7 +25,9 @@ html, body {
 
 
 body {
-  background-image: url("./img/texturaFondo.jpg");
+  background-image: url("./img/fondoAcronimo.jpg");
+  display: flex;
+  justify-content: center;
 }
 
 .container { 
@@ -35,7 +37,7 @@ body {
 
 .page-header{
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   background-color: var(--color-background);
   padding: 10px;
 }
@@ -50,7 +52,50 @@ p {
   color: var(--color-text);
 }
 
+.card {
+  background-color: var(--color-backgorund-card);
+  margin: 25px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px 0px 12px 12px;
+  display: flex;
+  align-items: center;  
+  gap: 20px;
+  /*Alentiza el movimiento del hover*/
+  transition: transform 0.3s, box-shadow 0.3s; 
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 5px 5px #134701;
+}
+
+.letter-and-text, .button-container, .image{
+  flex: 1; /*Cada parte ocupa un espacio similar*/
+  text-align: center;
+
+}
+
+.letter {
+  font-family: var(--font-initial-letter);
+  margin: 30px;
+  font-size: 80px;
+  color: var(--color-initial-letter);
+}
+
+figcaption {
+  font-size: 2rem;
+}
+
 img {
-  width: 10%;
+  width: 40%;
   height: auto; /*Mantiene la proporción al cambiar el ancho*/
+  border-radius: 8px;
+}
+
+button {
+  background-color: var(--color-initial-letter);
+  color: white;
+  border-radius: 5px;
 }
