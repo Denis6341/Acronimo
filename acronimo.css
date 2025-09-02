@@ -86,10 +86,11 @@ p {
 
 figcaption {
   font-size: 2rem;
+  font-family: var(--font-text);
 }
 
 img {
-  width: 40%;
+  width: 50%;
   height: auto; /*Mantiene la proporción al cambiar el ancho*/
   border-radius: 8px;
 }
@@ -98,4 +99,11 @@ button {
   background-color: var(--color-initial-letter);
   color: white;
   border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-family: var(--font-text);
+  cursor: pointer; /*El cursor cambia a una mano*/
+}
+button:hover {
+  background-color: var(--color-buttons);
 }
